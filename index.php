@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	$username = $_GET["u"];
 		if (empty($username)) {$username = "twitch";}
 	$fontcolor = $_GET["color"];
@@ -57,10 +57,9 @@
 		<img class="icon" src="images/viewers-icon.svg">
 		<span class="counter">Loading...</span>
 	</div>
-	<script type="text/javascript" src="/files/code/jquery.min.js"></script>
 	<script type="text/javascript">
 		var username = "<?php echo htmlspecialchars($username); ?>";
 		var updInterval = <?php echo htmlspecialchars($interval) . '000'; ?>;
 	</script>
-	<script type="text/javascript" src="scripts/getdata.js"></script>
+	<script type="text/javascript" src="getdata.js"></script>
 </body></html>
